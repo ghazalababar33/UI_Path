@@ -16,4 +16,7 @@ public class KeyPressesPage {
   public String getResult(){
     return driver.findElement(resultText).getText();
 }
+   public void enterPi(){
+    enterText(Keys.chord(Keys.ALT, "p") + "=3.14");
+}
 }
